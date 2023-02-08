@@ -1,9 +1,12 @@
 {
   "name": "timer",
+  "homepage": "https://felipengr.github.io/Ignite-Timer/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -12,6 +15,7 @@
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "date-fns": "^2.29.3",
+    "gh-pages": "^5.0.0",
     "immer": "^9.0.19",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
@@ -23,6 +27,7 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
